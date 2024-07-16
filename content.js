@@ -1,6 +1,4 @@
 
-// 聚焦 dom 的遮罩
-var maskDom = createMask();
 // 是否为选择模式，可以使用鼠标指针选择字段进行编辑,由平台程序改变 
 var isSelectModel = false;
 // 鼠标是否按下状态

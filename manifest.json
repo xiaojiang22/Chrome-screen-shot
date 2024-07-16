@@ -1,0 +1,79 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_pluginName__",
+    "description" : "__MSG_pluginDesc__",
+    "version": "1.0.0",
+    "default_locale": "zh_CN",
+    "icons": {
+      "16": "/images/logo_16.png",
+      "19": "/images/logo_19.png",
+      "38": "/images/logo_38.png",
+      "48": "/images/logo_48.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "./setting/index.html",
+    "default_icon": {
+        "16": "/images/logo_16.png",
+        "19": "/images/logo_19.png",
+        "38": "/images/logo_38.png",
+        "48": "/images/logo_48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "./libs/cropper.min.css"
+    ],
+    "js": [
+        "./libs/cropper.min.js",
+        "content.js",
+        "./libs/jspdf.umd.min.js",
+        "./libs/html2canvas.min.js"
+    ],
+      "matches": [
+          "<all_urls>"
+      ]
+  }
+  ],
+  "commands": {
+    "areaScreenshot": {
+        "description": "__MSG_areaScreenshotDesc__",
+        "suggested_key": {
+            "default": "Alt+Shift+Q"
+          }
+      },
+      "normalScreenshot": {
+        "description": "__MSG_normalScreenshot__",
+        "suggested_key": {
+            "default": "Alt+Shift+W"
+        }
+    },
+    "allScreenshot":{
+      "description": "__MSG_allScreenshot__",
+        "suggested_key": {
+            "default": "Alt+Shift+E"
+        }
+    }
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "notifications",
+    "tabs",
+    "downloads",
+    "contextMenus",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+
+}

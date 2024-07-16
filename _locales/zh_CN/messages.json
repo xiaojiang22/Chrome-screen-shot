@@ -1,0 +1,37 @@
+{
+	"pluginName": {
+		"message": "截图工具助手"
+	},
+	"pluginDesc": {
+		"message": "给页面中任意区域截图~"
+	},
+	"domScreenshotDesc":{ 
+		"message": "DOM 截图"
+	},
+	"areaScreenshotDesc":{ 
+		"message": "区域截图"
+	},
+	"modelLabel":{ 
+		"message": "保存为"
+	},
+	"modelOptionFile":{ 
+		"message": "文件"
+	},
+	"saveSuccessMsg":{ 
+		"message": "保存成功"
+	},
+	"msgTitle":{ 
+		"message": "提示"
+	},
+	"errorMsg":{
+		"message": "截图失败！请刷新页面或者重启浏览器尝试。"
+	},
+	"normalScreenshot":{
+		"message": "截图"
+	},
+	"allScreenshot":{
+		"message": "长截图"
+	}
+	
+
+}

@@ -1,0 +1,35 @@
+{
+	"pluginName": {
+		"message": "web screenshot"
+	},
+	"pluginDesc": {
+		"message": "Take a screenshot of the DOM or any area of the page"
+	},
+	"domScreenshotDesc":{ 
+		"message": "DOM"
+	},
+	"areaScreenshotDesc":{ 
+		"message": "area"
+	},
+	"modelLabel":{ 
+		"message": "Save As"
+	},
+	"modelOptionFile":{ 
+		"message": "File"
+	},
+	"saveSuccessMsg":{ 
+		"message": "Save Success"
+	},
+	"msgTitle":{ 
+		"message": "Message"
+	},
+	"errorMsg":{
+		"message": "Screenshot failed! Please refresh the page or restart the browser."
+	},
+	"normalScreenshot":{
+		"message": "screensot"
+	},
+	"allScreenshot":{
+		"message": "allscreenshot"
+	}
+}

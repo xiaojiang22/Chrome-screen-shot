@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+</head>
+<style>
+    /* ...之前的样式... */
+    .download-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .download-button:hover {
+        background-color: #45a049;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .images{
+        width: 50%; 
+        /* max-width: 1000px; */
+        height: 50%; 
+        /* max-height: 800px; */
+    }
+</style>
+<body>
+    <div class="box">
+        <h1>screenshot</h1>
+        <div>
+            <button class="download-button" id="saveAsPDF">saveAsPDF</button>
+            <button class="download-button" id="saveAsPNG">saveAsPNG</button>
+        </div>
+        <img id="showphoto" src="" class="images">
+        
+       
+    </div>
+
+</body>
+<script src="../libs/jspdf.umd.min.js"></script>
+<script src="../libs/html2canvas.min.js"></script>
+<script src="./index.js"></script>
+</html>
